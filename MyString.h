@@ -69,6 +69,10 @@ public:
 	{
 		return !(this->operator==(other));
 	}
+	char & operator [](int index)
+	{
+		return arr[index];
+	}
 	friend ostream& operator << (ostream& out, const String& object);
 	friend istream& operator >> (istream& in, String& object);
 
